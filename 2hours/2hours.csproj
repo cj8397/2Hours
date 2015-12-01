@@ -80,7 +80,62 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Designs\Entity Relationship Diagram1.jpg" />
+    <Content Include="Designs\Group Flow Chart.jpg" />
+    <Content Include="Designs\Site map1-1.jpg" />
+    <Content Include="Designs\User Case.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="html\AboutUs.html" />
+    <Content Include="html\browsfood.html" />
+    <Content Include="html\Contact.html" />
+    <Content Include="html\FAQ.html" />
+    <Content Include="html\index.html" />
+    <Content Include="html\Location.html" />
+    <Content Include="html\payment.html" />
+    <Content Include="html\payNow.html" />
+    <Content Include="html\shoppingCart.html" />
+    <Content Include="html\SignUp.html" />
+    <Content Include="img\099303-facebook-logo-square.png" />
+    <Content Include="img\2hours_logo.JPG" />
+    <Content Include="img\apple.jpeg" />
+    <Content Include="img\apples.jpg" />
+    <Content Include="img\BakeryMain.jpg" />
+    <Content Include="img\banana.jpeg" />
+    <Content Include="img\bread1.jpeg" />
+    <Content Include="img\bread2.jpeg" />
+    <Content Include="img\bread3.jpeg" />
+    <Content Include="img\BreadMain.jpeg" />
+    <Content Include="img\carrot.jpg" />
+    <Content Include="img\carrot1.jpg" />
+    <Content Include="img\celery.jpg" />
+    <Content Include="img\chicken1.jpeg" />
+    <Content Include="img\chicken2.jpeg" />
+    <Content Include="img\deli1.jpeg" />
+    <Content Include="img\deli2.jpeg" />
+    <Content Include="img\download.jpg" />
+    <Content Include="img\Ecologically_grown_vegetables.jpg" />
+    <Content Include="img\eggplant.jpeg" />
+    <Content Include="img\Fruits.jpg" />
+    <Content Include="img\glossy-black-new-twitter-bird-square.png" />
+    <Content Include="img\images.jpg" />
+    <Content Include="img\images.png" />
+    <Content Include="img\linkedin logo.png" />
+    <Content Include="img\meat1.jpeg" />
+    <Content Include="img\meat2.jpeg" />
+    <Content Include="img\MeatMain.jpeg" />
+    <Content Include="img\onion.jpg" />
+    <Content Include="img\orange.jpeg" />
+    <Content Include="img\potato.jpg" />
+    <Content Include="img\ProductsMain.jpg" />
+    <Content Include="img\seafood1.jpeg" />
+    <Content Include="img\seafood2.jpeg" />
+    <Content Include="img\seafood3.jpeg" />
+    <Content Include="img\SeafoodMain.jpg" />
+    <Content Include="img\smiley.png" />
+    <Content Include="img\spinach.jpg" />
+    <Content Include="img\stickman.gif" />
+    <Content Include="img\strawberry.jpg" />
+    <Content Include="img\VegetablesMain.jpeg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

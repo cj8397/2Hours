@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="fresh food, vancouver, delivery, payment, pay, credit cart, checkout">
+    <meta name="author" content="Farideh Lamee">
+    <title>Checkout</title>
+</head>
+<body>
+<header id="page-header">
+    <img src="img/2hours_logo.jpg" height="150" width="200" alt="logo"/>
+    <div id=menu>
+        <a href="index.html">Home | </a>
+        <a href="SignUp.html">User Profile | </a>
+        <a href="browsfood.html">Browse Food | </a>
+        <a href="shoppingCart.html">Shopping Cart </a>
+    </div>
+</header> <!-- #page-header -->
+<h1>Pay with your credit cart</h1>
+<form>
+    <fieldset>
+        <legend>Personalise:</legend>
+        Name: <input type="text">
+        Email: <input type="text">
+        Telephone: <input type="text">
+        Address: <input type = "text" size="50">
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Credit cart information:</legend>
+        Cart Number: <input type="text">
+        Cart Verification Number: <input type="text">
+        Expiration Date: <input type="text">
+        <label for="topic">Year</label>
+        <select name="topic" id="year">
+            <option value="year2015">2015</option>
+            <option value="year2016">2016</option>
+            <option value="year2017">2017</option>
+            <option value="year2018">2018</option>
+        </select>
+        <label for="topic">Month</label>
+        <select name="topic" id="month">
+            <option value="month1">1</option>
+            <option value="month2">2</option>
+            <option value="month3">3</option>
+            <option value="month4">4</option>
+            <option value="month5">5</option>
+            <option value="month6">6</option>
+            <option value="month7">7</option>
+            <option value="month8">8</option>
+            <option value="month9">9</option>
+            <option value="month10">10</option>
+            <option value="month11">11</option>
+            <option value="month12">12</option>
+
+        </select>
+    </fieldset>
+</form>
+
+<p>Print my receipt
+    <input type="checkbox" name="print"
+           value="print"/>
+
+</p>
+<p>Email my receipt
+    <input type="checkbox" name="email"
+           value="email"/>
+</p>
+
+<form action="payNow.html" method="get">
+    <button name="subject" type="submit" value="Submit">Pay now</button></form>
+<footer>
+    <a href="AboutUs.html">About Us</a>  |
+    <a href="Location.html">Find a Location</a> |
+    <a href="Contact.html">Contact Us</a>|
+    <a href="FAQ.html">FAQ</a>
+
+    <p>&copy; 2015 <span class="company-name">2-hours.com</span></p>
+</footer><!-- #page-footer -->
+</body>
+</html>
