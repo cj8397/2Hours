@@ -87,6 +87,7 @@
     <Content Include="Designs\Site map1-1.jpg" />
     <Content Include="Designs\User Case.jpg" />
     <Content Include="Global.asax" />
+    <Content Include="homepage.html" />
     <Content Include="html\AboutUs.html" />
     <Content Include="html\browsfood.html" />
     <Content Include="html\Contact.html" />
