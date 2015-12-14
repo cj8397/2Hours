@@ -1,31 +1,40 @@
-﻿IF OBJECT_ID('Product')
+﻿
+IF OBJECT_ID('OrderProduct')
+	IS NOT NULL DROP TABLE OrderProduct; 
+IF OBJECT_ID('OrderDetail')
+	IS NOT NULL DROP TABLE OrderDetail; 
+IF OBJECT_ID('Product')
 	IS NOT NULL DROP TABLE Product;
 IF OBJECT_ID('UserProfile')
 	IS NOT NULL DROP TABLE UserProfile;
 IF OBJECT_ID('Supplier')
 	IS NOT NULL DROP TABLE Supplier;
-IF OBJECT_ID('OrderDetail')
-	IS NOT NULL DROP TABLE OrderDetail; 
 IF OBJECT_ID('Category')
 	IS NOT NULL DROP TABLE Category;
+
+
 
 CREATE TABLE Category (	
 	productType VARCHAR(20)PRIMARY KEY,		
 	);
 GO
 
-CREATE TABLE Product (
-	productID INT PRIMARY KEY,
-	productName VARCHAR(20),
-	unit VARCHAR(5),
-	price MONEY CHECK(price > 0), 
-	producType VARCHAR(20) FOREIGN KEY REFERENCES Category(productType)
+INSERT INTO Category VALUES('Vegetable');
+INSERT INTO Category VALUES('Meat');
+INSERT INTO Category VALUES('Fruit');
+
+CREATE TABLE Supplier (
+	supplierID INT IDENTITY(1, 1) PRIMARY KEY,
+	supplierName VARCHAR(50),
+	supplierAddress VARCHAR(100),
+	email VARCHAR(100),
+	phone FlOAT,
 	);
 GO
 
-INSERT INTO Product VALUES(1, 'Tomato', 'lb', 1.29);
-INSERT INTO Product VALUES(2, 'Short Ribs', 'lb', 6.49);
-INSERT INTO Product VALUES(3, 'Grapes', 'pc', 2);
+INSERT INTO Supplier VALUES('Costco', '555 Seymour Street','customer_service@costco.com', 6041239567 );
+INSERT INTO Supplier VALUES('Safeway', '121 Cardero Street', 'customer_service@safeway.com',7784568921); 
+INSERT INTO Supplier VALUES('SuperStore', '234 Glen Dr', 'customerservice@superstore.com', 6041256743);
 GO
 
 CREATE TABLE UserProfile (
@@ -33,37 +42,42 @@ CREATE TABLE UserProfile (
 	firstName VARCHAR(30),
 	lastName VARCHAR(30),
 	dateOfBirth DATE,
-	userPassWord VARCHAR(30),
-	userAddress VARCHAR(30),
-	email VARCHAR(15),
-	phone INT,
+	userPassWord VARCHAR(100),
+	userAddress VARCHAR(100),
+	email VARCHAR(100),
+	phone FLOAT,
 	);
 GO
 
-INSERT INTO UserProfile VALUES(1, 'cheng', 'c',2000-01-01,'*****************','879 Seymour Street','customerservice@superstore.com', 7789459065);
+INSERT INTO UserProfile VALUES(1, 'cheng', 'c', '2000-1-1', 'hello', '879 Seymour Street', 'customerservice@superstore.com', 60493288484);
+INSERT INTO UserProfile VALUES(2, 'farideh', 'f', '2015-12-14', 'welcome', '879 Seymour Street', 'customerservice@superstore.com', 604869621);
 
-
-
-CREATE TABLE Supplier (
-	supplierID INT IDENTITY(1, 1) PRIMARY KEY,
-	supplierName VARCHAR(20),
-	supplierAddress VARCHAR(55),
-	email VARCHAR(20),
-	phone VARCHAR(12),
+CREATE TABLE Product (
+	productID INT PRIMARY KEY,
+	productName VARCHAR(20),
+	unit VARCHAR(5),
+	price MONEY CHECK(price > 0), 
+	producType VARCHAR(20) FOREIGN KEY REFERENCES Category(productType),
+	supplierID INT FOREIGN KEY REFERENCES Supplier(supplierID), 
 	);
 GO
 
-INSERT INTO Supplier VALUES('Costco', '555 Seymour Street','customer_service@costco.com', 6041239567 );
-INSERT INTO Supplier VALUES('Safeway', '121 Cardero Street', 'customer_service@safeway.com',7784568921); 
-INSERT INTO Supplier VALUES('SuperStore', '234 Glen Dr', 'customerservice@superstore.com', 6041256743);
-GO 
+INSERT INTO Product VALUES(1, 'Tomato', 'lb', 1, 'Vegetable', '1');
+INSERT INTO Product VALUES(2, 'Short Ribs', 'lb', 6, 'Meat', '2');
+INSERT INTO Product VALUES(3, 'Grapes', 'pc', 2, 'Fruit', '3');
+GO
 
 CREATE TABLE OrderDetail (
 	orderNumber INT PRIMARY KEY,
 	orderDate DATETIME,
 	deliveryTime TIME(7),
 	approvedByAdmin INT, 
-	userID INT FOREIGN KEY REFERENCES UserProfile(userID)
+	userID INT FOREIGN KEY REFERENCES UserProfile(userID),
 	);
 GO 
 
+CREATE TABLE OrderProduct (
+	quantity DECIMAL,
+	productID INT FOREIGN KEY REFERENCES Product(productID),
+	orderNumber INT FOREIGN KEY REFERENCES orderDetail(orderNumber),
+);
