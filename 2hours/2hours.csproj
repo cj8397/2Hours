@@ -138,7 +138,7 @@
     <Content Include="img\stickman.gif" />
     <Content Include="img\strawberry.jpg" />
     <Content Include="img\VegetablesMain.jpeg" />
-    <Content Include="SQL query.txt" />
+    <Content Include="Documents\SQL query.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +151,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Documents\ProjectPhase1.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
