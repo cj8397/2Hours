@@ -82,10 +82,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Designs\Entity Relationship Diagram1.jpg" />
-    <Content Include="Designs\Group Flow Chart.jpg" />
-    <Content Include="Designs\Site map1-1.jpg" />
-    <Content Include="Designs\User Case.jpg" />
+    <Content Include="Documents\Designs\Entity Relationship Diagram1.jpg" />
+    <Content Include="Documents\Designs\Group Flow Chart.jpg" />
+    <Content Include="Documents\Designs\Site map1-1.jpg" />
+    <Content Include="Documents\Designs\User Case.jpg" />
     <Content Include="Global.asax" />
     <Content Include="homepage.html" />
     <Content Include="html\AboutUs.html" />
