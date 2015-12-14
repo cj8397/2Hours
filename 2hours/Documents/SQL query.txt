@@ -26,6 +26,7 @@ GO
 INSERT INTO Product VALUES(1, 'Tomato', 'lb', 1.29);
 INSERT INTO Product VALUES(2, 'Short Ribs', 'lb', 6.49);
 INSERT INTO Product VALUES(3, 'Grapes', 'pc', 2);
+INSERT INTO Product VALUES(3, 'Grapes', 'pc', 2);
 GO
 
 CREATE TABLE UserProfile (
