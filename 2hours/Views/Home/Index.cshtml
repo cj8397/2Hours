@@ -4,14 +4,14 @@
 <div class="main-page-container">
     <div class="col-sm-4">
         <img src="~/img/cart.png" width="200" height="200"/>
-        <a href="browsfood.html">Start Your Grocery Shopping, now!</a>
+        @Html.ActionLink("Start Your Grocery Shopping", "BrowsFood")
     </div>
     <div class="col-sm-4">
         <img src="~/img/2hours_logo.JPG" width="200" height="200" />
-        <a href="~/Views/Home/AboutUs.cshtml">Learn more about us..</a>
+        @Html.ActionLink("Learn more about us", "AboutUs")
     </div>
     <div class="col-sm-4">
         <img src="~/img/login.png" width="200" height="200" />
-        <a href="~/Views/Home/Login.cshtml">Sign Up!</a>
+        @Html.ActionLink("Sign Up", "Login")
     </div>
 </div>
