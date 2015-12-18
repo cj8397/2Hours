@@ -16,8 +16,39 @@ textarea {
     max-width: 280px;
 }
 
+header {
+    background-image: url('../img/VegetablesMain.jpeg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:500px;
+    background-position-y: -203px;
+
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    text-align:center;
+    padding-top: 194px;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    color: white;
+    text-align:center;
+    padding-top: 17px;
+    font-size: 2em;
+}
+
 .navbar-inverse {
-    border-radius:none;
+    border-radius:0;
+    background-color: rgba(65, 121, 11, 0.95);
+    border: #5f8000;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
 }
 
 body {
@@ -27,16 +58,31 @@ body {
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(65, 121, 11, 0.95);;
     color: #fff;
     text-align: center;
     clear: both;
     width: 100%;
     left: 0;
     bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 footer p {
     margin: 0;
+    padding-top: 10px;
+    font-size:0.9em;
 }
 
+footer>a {
+    color: white;
+    padding: 10px 15px;
+
+}
+
+@media only screen and (max-width: 955px) {
+    header {
+        background-position-y: 0;
+    }
+}
