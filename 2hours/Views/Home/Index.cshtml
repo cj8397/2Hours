@@ -1,24 +1,17 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-    <div id="content">
-        <h2>No enough time for grocery shopping....we've got your back!</h2>
-        @Html.ActionLink("Start Your Shopping Now", "BrowsFood")
+<div class="main-page-container">
+    <div class="col-sm-4">
+        <img src="~/img/cart.png" width="200" height="200"/>
+        <a href="browsfood.html">Start Your Grocery Shopping, now!</a>
     </div>
     <div class="col-sm-4">
-        <p>bla bla</p>
+        <img src="~/img/2hours_logo.JPG" width="200" height="200" />
+        <a href="~/Views/Home/AboutUs.cshtml">Learn more about us..</a>
     </div>
     <div class="col-sm-4">
-        <p>hey hey</p>
+        <img src="~/img/login.png" width="200" height="200" />
+        <a href="~/Views/Home/Login.cshtml">Sign Up!</a>
     </div>
-    <div class="col-sm-4">
-        <p>ho ho</p>
-    </div>
-    <div class="col-sm-12">
-        <div class="col-sm-8">
-            <p>hey</p>
-        </div>
-        <div class="col-sm-4">
-            <p>bye bye</p>
-        </div>
-    </div>
+</div>
