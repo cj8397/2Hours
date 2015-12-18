@@ -4,5 +4,12 @@ footer {
     color: #fff;
     text-align: center;
     clear: both;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
 }
+
+
 
