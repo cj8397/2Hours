@@ -102,8 +102,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="homepage.html" />
-    <Content Include="img\cart.png" />
-    <Content Include="img\login.png" />
     <Content Include="Original html\AboutUs.html" />
     <Content Include="Original html\browsfood.html" />
     <Content Include="Original html\Contact.html" />
@@ -240,6 +238,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Location.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Home\Payment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

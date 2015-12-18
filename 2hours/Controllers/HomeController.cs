@@ -48,5 +48,15 @@ namespace _2hours.Controllers
         {
             return View();
         }
+
+        public ActionResult Payment()
+        {
+            return View();
+        }
+    
+        public ActionResult AddCart()
+        {
+            return View();
+        }
     }
 }
