@@ -92,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\2hour.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -102,16 +103,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="homepage.html" />
-    <Content Include="html\AboutUs.html" />
-    <Content Include="html\browsfood.html" />
-    <Content Include="html\Contact.html" />
-    <Content Include="html\FAQ.html" />
-    <Content Include="html\index.html" />
-    <Content Include="html\Location.html" />
-    <Content Include="html\payment.html" />
-    <Content Include="html\payNow.html" />
-    <Content Include="html\shoppingCart.html" />
-    <Content Include="html\SignUp.html" />
+    <Content Include="Original html\AboutUs.html" />
+    <Content Include="Original html\browsfood.html" />
+    <Content Include="Original html\Contact.html" />
+    <Content Include="Original html\FAQ.html" />
+    <Content Include="Original html\index.html" />
+    <Content Include="Original html\Location.html" />
+    <Content Include="Original html\payment.html" />
+    <Content Include="Original html\payNow.html" />
+    <Content Include="Original html\shoppingCart.html" />
+    <Content Include="Original html\SignUp.html" />
     <Content Include="img\099303-facebook-logo-square.png" />
     <Content Include="img\2hours_logo.JPG" />
     <Content Include="img\apple.jpeg" />
