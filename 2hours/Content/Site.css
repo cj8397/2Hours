@@ -16,7 +16,7 @@ textarea {
     max-width: 280px;
 }
 
-header {
+.main-header {
     background-image: url('../img/VegetablesMain.jpeg');
     background-size:cover;
     background-repeat:no-repeat;
@@ -25,7 +25,7 @@ header {
 
 }
 
-header h1 {
+.main-header h1 {
     margin: 0;
     color: white;
     text-align:center;
@@ -33,7 +33,7 @@ header h1 {
     font-size: 2.5em;
 }
 
-header h2 {
+.main-header h2 {
     margin: 0;
     color: white;
     text-align:center;
