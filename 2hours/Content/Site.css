@@ -16,3 +16,27 @@ textarea {
     max-width: 280px;
 }
 
+.navbar-inverse {
+    border-radius:none;
+}
+
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
