@@ -32,9 +32,9 @@ CREATE TABLE Supplier (
 	);
 GO
 
-INSERT INTO Supplier VALUES('Costco', '555 Seymour Street','customer_service@costco.com', 6041239567 );
-INSERT INTO Supplier VALUES('Safeway', '121 Cardero Street', 'customer_service@safeway.com',7784568921); 
-INSERT INTO Supplier VALUES('SuperStore', '234 Glen Dr', 'customerservice@superstore.com', 6041256743);
+INSERT INTO Product VALUES(1, 'Tomato', 'lb', 1.29);
+INSERT INTO Product VALUES(2, 'Short Ribs', 'lb', 6.49);
+INSERT INTO Product VALUES(3, 'Grapes', 'pc', 2);
 GO
 
 CREATE TABLE UserProfile (
@@ -65,7 +65,7 @@ GO
 INSERT INTO Product VALUES(1, 'Tomato', 'lb', 1, 'Vegetable', '1');
 INSERT INTO Product VALUES(2, 'Short Ribs', 'lb', 6, 'Meat', '2');
 INSERT INTO Product VALUES(3, 'Grapes', 'pc', 2, 'Fruit', '3');
-GO
+GO 
 
 CREATE TABLE OrderDetail (
 	orderNumber INT PRIMARY KEY,
