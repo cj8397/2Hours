@@ -16,6 +16,10 @@ textarea {
     max-width: 280px;
 }
 
+.navbar-inverse {
+    border-radius:none;
+}
+
 body {
     padding-top: 0;
     padding-bottom: 0;
