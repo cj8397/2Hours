@@ -21,7 +21,7 @@ header {
     background-size:cover;
     background-repeat:no-repeat;
     height:500px;
-    background-position-y: -203px;
+    background-position-y: -255px;
 
 }
 
@@ -55,6 +55,13 @@ body {
     padding-top: 0;
     padding-bottom: 0;
 
+}
+
+.main-page-container .col-sm-4 {
+    background: white;
+    border: 1px dashed black;
+    padding: 20px;
+    min-height: 500px;
 }
 
 footer {
